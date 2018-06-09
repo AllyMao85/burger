@@ -1,0 +1,28 @@
+body {
+   background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 40px;
+}
+
+#burgerlist {
+    width: 450px;
+    /* margin-left: 40px; */
+}
+
+#devourlist {
+    /* margin-right: 40px; */
+    width: 450px;
+    /* float: right; */
+}
+
+#add {
+    text-align: center;
+}
+
+ #submit {
+    margin-top: 15px;
+    
+}
