@@ -11,7 +11,7 @@ $(document).ready(function() {
     
     // $(document).on("change", $("input[type='text']").val(), function(event){  
     //$("input").change(function(event){
-    $("body").on('change', 'input', function(event) {
+    $("body").on('change', "input[class='list']", function(event) {
       event.preventDefault();
       console.log($(this).val());
       var id = $(this).parent().attr("id");
@@ -20,7 +20,7 @@ $(document).ready(function() {
       console.log("changed burger name: " + newburgername);
       var changedburger = {
         burger_name: newburgername,
-        devoured: 0
+        // devoured: 0
       };
      console.log(changedburger);
     // Send the PUT request.
