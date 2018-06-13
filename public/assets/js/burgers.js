@@ -36,12 +36,12 @@ $(document).ready(function() {
         );
      });
       // Check input( $( this ).val() ) for validity here
-    });
-  
+      
     $("#submit").on("click", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
+     console.log("clicked");
+      
       var newburger = {
         burger: $("input[name=burger]").val().trim()
       };
@@ -56,18 +56,20 @@ $(document).ready(function() {
           location.reload();
         }
       );
-
+      });
+ 
+    });
       // $("body").on('click', "button[class='devour']", function(event) {
       // //$("body").on('click', "button[class='devour']", function(event) {
       //   event.preventDefault();
       //   var id=$(this).parent().attr("id");
       //   console.log(id);
       //   $("'#"+id+"'").appendTo("#devourlist");
-        //remove form and add input now allow edit to devour list
-        //append input to devourlist 
+      //   remove form and add input now allow edit to devour list
+      //   append input to devourlist 
       // })
       
 
-    });
+    
 
   
