@@ -1,6 +1,9 @@
 {
   "name": "burger",
   "version": "1.0.0",
+  "engines": {
+    "node":"8.9.4"
+  },
   "description": "node Express Handelbar homework",
   "main": "server.js",
   "scripts": {
