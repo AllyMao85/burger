@@ -4,5 +4,4 @@ controllers/
 db/
 models/
 node_modules/
-server.js
 views/
