@@ -1,0 +1,12 @@
+
+	<form id="{{id}}">
+		{{#if devoured}}
+        <input type="text" value = "{{burger_name}}" class="list" readonly>
+		{{else}}
+	      <input type="text" value = "{{burger_name}}" class="list">
+		{{/if}}
+    {{#unless devoured}}
+	     <button class="devour">devour</button>
+	  {{/unless}}
+	</form>
+

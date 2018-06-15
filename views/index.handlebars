@@ -1,0 +1,32 @@
+
+<h1>Burgers</h1>
+
+
+
+<div id="burgerlist">
+	
+   <ul>
+     {{#each burgers}}
+       {{#unless devoured}}
+          {{> burger/burger-block}}
+       {{/unless}}
+     {{/each}}
+  </ul>
+</div>
+
+<div id="devourlist">
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+           {{> burger/burger-block}}
+        {{/if}}
+      {{/each}}
+    </ul>
+</div>
+
+
+<form action="/" method="POST">
+	<input type="text" name="burger"><br>
+
+	<button type="submit" id="submit">Submit</button>
+</form>
