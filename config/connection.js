@@ -10,8 +10,8 @@ var connection;
 // });
 
 
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
+if ('mysql://qh7256ttz3n0o3on:ww7uzdsauqt6k72m@g3v9lgqa8h5nq05o.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s3xxp8v6jcmv6x5h') {
+  connection = mysql.createConnection('mysql://qh7256ttz3n0o3on:ww7uzdsauqt6k72m@g3v9lgqa8h5nq05o.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s3xxp8v6jcmv6x5h');
   console.log(JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
