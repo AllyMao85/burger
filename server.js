@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path=require("path");
-var PORT = process.env.PORT || 3400;
+var PORT = process.env.PORT;
 
 var app = express();
 const favicon = require('express-favicon');
